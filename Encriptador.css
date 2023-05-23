@@ -1,0 +1,152 @@
+body{
+    background: #eee;
+}
+
+.logo{
+    margin: 40px auto;
+}
+
+.input-texto{
+    font-style: normal;
+    font-size: 2.5em;
+    color: black;
+    margin: 2% 15%;
+    width: 40%;
+    height: 100%;
+    border: 1px solid transparent;
+    resize: none;
+    background: transparent;
+}
+
+textarea:focus{
+    outline-color: transparent;
+}
+
+.input-texto::placeholder {
+    color: #0a3871;
+}
+
+.caja{
+    display: inline;
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    width: 30%;
+    border: 2px solid black;
+    height: 90%;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+
+.input-texto-copiar{
+    font-style: normal;
+    font-size: 2em;
+    color: black;
+    margin: 10% 10%;
+    width: 80%;
+    height: 82%;
+    border: 1px solid transparent;
+    resize: none;
+}
+
+.input-texto-copiar::placeholder{
+    background-image: url("Muñeco.png"), url("Frame\ 5.png");
+    background-position: 50% 30%, 50% 90%;
+    background-repeat: no-repeat;
+    background-size: 80% 50%, 80% 23%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+}
+
+.aviso{
+    font-style: normal;
+    font-size: 12px;
+    color: #495057;
+    opacity: 0.8;
+    margin: 1.5% 20%;
+}
+
+.botones{
+    margin: 0 20%;
+}
+
+.botonEncriptar{
+    background-color: #0a3871;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    padding: 2% 10%;
+    border: 1px solid black;
+    border-radius: 2em;
+    margin-right: 2%;
+}
+
+.botonEncriptar:active{
+    background: #d8dfe8;
+    color: black;
+    border: 1px solid #0a3871; 
+    transition: 0.2s all;
+}
+
+.botonEncriptar:hover{
+    cursor: pointer;
+}
+
+.botonDesencriptar{
+    background-color: #d8dfe8;
+    font-size: 1.2em;
+    color: black;
+    text-align: center;
+    padding: 2% 10%;
+    border: 1px solid #0a3871;
+    border-radius: 2em;
+}
+
+.botonDesencriptar:active{
+    background: #0a3871;
+    color: white;
+    border: 1px solid black; 
+    transition: 0.2s all;
+}
+
+.botonDesencriptar:hover{
+    cursor: pointer;
+}
+
+/*Responsive*/
+@media screen and (max-width:480px){
+    .logo{
+        margin: 10% 0px;
+    }
+    .input-texto{
+        width: 80%;
+        height: 60%;
+        margin: 0px 10%;
+    }
+    .aviso{
+        width: 80%;
+        top: 67%;
+        margin: 2% 12%;
+    }
+    .aviso p{
+        font-size: 18px;
+    }
+    .botones{
+        width: 80%;
+        top: 70%;
+        margin: 0% 10%;
+    }
+    .botonEncriptar, .botonDesencriptar{
+        width: 48%;
+        border-radius: 16px;
+    }
+    .caja{
+        width: 80%;
+        height: 32%;
+        top: 65%;
+        margin: 1% 4%;
+    }
+}
