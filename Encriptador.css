@@ -119,12 +119,13 @@ textarea:focus{
 /*Responsive*/
 @media screen and (max-width:480px){
     .logo{
-        margin: 10% 0px;
+        margin: 2% 0px;
     }
     .input-texto{
         width: 80%;
         height: 60%;
         margin: 0px 10%;
+        font-size: 24px;
     }
     .aviso{
         width: 80%;
@@ -132,12 +133,13 @@ textarea:focus{
         margin: 2% 12%;
     }
     .aviso p{
-        font-size: 18px;
+        font-size: 14px;
     }
     .botones{
         width: 80%;
         top: 70%;
         margin: 0% 10%;
+        font-size: 12px;
     }
     .botonEncriptar, .botonDesencriptar{
         width: 48%;
